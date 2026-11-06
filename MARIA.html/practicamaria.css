@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #91add8;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+    background-color: #f8faff;
+    max-width: 1000px;
+    margin: auto;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+/* ENCABEZADO */
+.encabezado h5 {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.encabezado h1 {
+    font-size: 32px;
+    color: #090936;
+    margin-bottom: 15px;
+}
+
+.encabezado p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+/* FLEXBOX */
+.servicios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* TARJETAS */
+.tarjeta {
+    background-color: white;
+    padding: 25px;
+    width: 33.33%;
+    text-align: left;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.tarjeta h2 {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.tarjeta h3 {
+    font-size: 17px;
+    color: #15152e;
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.tarjeta a {
+    color: #315de5;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* PARTE AZUL */
+.parte-azul {
+    background-color: #08083f;
+    padding: 65px;
+    margin-top: -90px;
+}
+
+button {
+    background-color: #315de5;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* GALERIA */
+.galeria {
+    max-width: 1000px;
+    margin: 70px auto;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.foto {
+    width: calc(33.33% - 4px);
+    height: 250px;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ADAPTACION PARA CELULARES */
+@media (max-width: 650px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .contenedor {
+        padding: 50px 20px;
+    }
+
+    .servicios {
+        flex-direction: column;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+
+    .parte-azul {
+        margin-top: 0;
+    }
+
+    .foto {
+        width: 100%;
+    }
+}
